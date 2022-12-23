@@ -1,5 +1,6 @@
-import { defineUserConfig, defaultTheme } from 'vuepress'
+import { defineUserConfig } from 'vuepress'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { defaultTheme } from '@vuepress/theme-default'
 
 export default defineUserConfig({
     title: 'Java',
@@ -9,6 +10,7 @@ export default defineUserConfig({
         lineNumbers: true,
     },
     theme: defaultTheme({
+        lang: 'zh-CN',
         logo: '/logo/java.png',
         nav: [
             { text: 'Github', link: 'https://github.com/jgckM/java' },
@@ -16,7 +18,7 @@ export default defineUserConfig({
         sidebar: {
             '/': [
                 'test',
-                'test2'
+                'test2',
             ]
         },
         locales: {
