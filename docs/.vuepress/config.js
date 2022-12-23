@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Java学习',
-  description: 'Java Study,坚持努力',
+  title: 'Java瀛︿範',
+  description: 'Java Study,鍧氭寔鍔姏',
   base: '/java/'
 }
