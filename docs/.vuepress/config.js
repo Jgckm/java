@@ -3,6 +3,7 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { defaultTheme } from '@vuepress/theme-default'
 
 export default defineUserConfig({
+    lang: 'zh-CN',
     title: 'Java',
     description: 'Java Study,坚持努力',
     base: '/java/',
@@ -10,26 +11,39 @@ export default defineUserConfig({
         lineNumbers: true,
     },
     theme: defaultTheme({
-        lang: 'zh-CN',
         logo: '/logo/java.png',
         nav: [
             { text: 'Github', link: 'https://github.com/jgckM/java' },
         ],
         sidebar: {
-            '/': [
-                'test',
-                'test2',
-            ]
-        },
-        locales: {
-            // 键名是该语言所属的子路径
-            // 作为特例，默认语言可以使用 '/' 作为其路径。
-            '/': {
-                lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-            },
-            home: '/',
+            '/zh/guide/': [
+                {
+                    text: 'Java入门',
+                    collapsible: true,
+                    children: [
+                       '注释',
+                    ]
+                },
+                {
+                    text: 'Java进阶',
+                    collapsible: true,
+                    children: [
+                        {
+                            text: '面向对象',
+                            children: ['']
+                        }
+                    ]
+                },
+            ],
         },
     }),
+    locales: {
+        '/zh/guide/': {
+            lang: 'zh-CN',
+            title: 'Java',
+            description: 'Java学习笔记',
+        },
+    },
     head: [
         ['link', { rel: 'icon', href: '/logo/java.png' }],
     ],
@@ -38,4 +52,5 @@ export default defineUserConfig({
             // 配置项
         }),
     ],
+    home: '/',
 })
