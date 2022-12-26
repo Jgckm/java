@@ -17,33 +17,13 @@ export default defineUserConfig({
         ],
         sidebar: {
             '/zh/guide/': [
-                {
-                    text: 'Java入门',
-                    collapsible: true,
-                    children: [
-                       '注释',
-                    ]
-                },
-                {
-                    text: 'Java进阶',
-                    collapsible: true,
-                    children: [
-                        {
-                            text: '面向对象',
-                            children: ['']
-                        }
-                    ]
-                },
-            ],
+                '01-注释和关键字',
+                '02-字面量',
+                '03-变量'
+            ]
         },
     }),
-    locales: {
-        '/zh/guide/': {
-            lang: 'zh-CN',
-            title: 'Java',
-            description: 'Java学习笔记',
-        },
-    },
+
     head: [
         ['link', { rel: 'icon', href: '/logo/java.png' }],
     ],
