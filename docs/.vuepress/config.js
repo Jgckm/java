@@ -17,9 +17,14 @@ export default defineUserConfig({
         ],
         sidebar: {
             '/zh/guide/': [
-                '01-注释和关键字',
-                '02-字面量',
-                '03-变量'
+                {
+                    text: 'Java基础',
+                    children: [
+                        '01-注释和关键字',
+                        '02-字面量',
+                        '03-变量'
+                    ]
+                }
             ]
         },
     }),
