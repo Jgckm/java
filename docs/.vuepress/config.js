@@ -12,7 +12,7 @@ export default defineUserConfig({
     },
     theme: defaultTheme({
         logo: '/logo/java.png',
-        nav: [
+        navbar: [
             { text: 'Github', link: 'https://github.com/jgckM/java' },
         ],
         sidebar: {
@@ -22,9 +22,17 @@ export default defineUserConfig({
                     children: [
                         '01-注释和关键字',
                         '02-字面量',
-                        '03-变量'
+                        '03-变量',
+                        '04-数据类型',
+                        '05-标识符',
+                        '进制转换',
+						"06-键盘录入",
+						"07-运算符",
+						"08-多学一招"，
+						"09-流程控制语句"
                     ]
-                }
+                },
+               
             ]
         },
     }),
@@ -33,9 +41,6 @@ export default defineUserConfig({
         ['link', { rel: 'icon', href: '/logo/java.png' }],
     ],
     plugins: [
-        docsearchPlugin({
-            // 配置项
-        }),
-    ],
+	],
     home: '/',
 })
