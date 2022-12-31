@@ -41,6 +41,10 @@ export default defineUserConfig({
         ['link', { rel: 'icon', href: '/logo/java.png' }],
     ],
     plugins: [
+        docsearchPlugin({
+            // 配置项
+          
+        })
 	],
     home: '/',
 })
