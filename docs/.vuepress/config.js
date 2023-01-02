@@ -26,17 +26,17 @@ export default defineUserConfig({
                         '04-数据类型',
                         '05-标识符',
                         '进制转换',
-						"06-键盘录入",
-						"07-运算符",
-						"08-多学一招",
-						"09-流程控制语句",
+                        "06-键盘录入",
+                        "07-运算符",
+                        "08-多学一招",
+                        "09-流程控制语句",
                         "10-获取随机数",
                         "11-数组",
                         "12-方法",
                         "13-综合练习",
                     ]
                 },
-               
+
             ]
         },
     }),
@@ -46,9 +46,12 @@ export default defineUserConfig({
     ],
     plugins: [
         docsearchPlugin({
-            // 配置项
-          
+            appId: '4GKRFX9WO6',
+            apiKey: 'b1688585ac173a1da26f53de06745b47',
+            indexName: 'java',
+            placeholder: '请输入关键词',
+            buttonText: '搜索',
         })
-	],
+    ],
     home: '/',
 })
