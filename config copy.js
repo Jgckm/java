@@ -1,7 +1,3 @@
-const creatSidebar = require("./sidebar");
-
-const sidebar = creatSidebar();
-
 module.exports = {
   title: "Java",
   home: "/",
@@ -15,10 +11,7 @@ module.exports = {
       lang: "zh-CN",
     },
   },
-  head: [
-    ["link", { rel: "icon", href: "/logo/java.png" }],
-    ["link", { rel: "stylesheet", href: "/css/index.css" }],
-  ],
+  head: [["link", { rel: "icon", href: "/logo/java.png" }]],
   themeConfig: {
     logo: "/logo/java.png",
     navbar: [
@@ -28,16 +21,38 @@ module.exports = {
     sidebarDepth: 2,
     lastUpdated: "最后更新",
     smoothScroll: true,
-    sidebar: sidebar,
+    sidebar: [
+      {
+        title: "Java基础",
+        path: "/zh/guide/",
+        children: [
+          "01-注释和关键字",
+          "02-字面量",
+          "03-变量",
+          "04-数据类型",
+          "05-标识符",
+          "进制转换",
+          "06-键盘录入",
+          "07-运算符",
+          "08-多学一招",
+          "09-流程控制语句",
+          "10-获取随机数",
+          "11-数组",
+          "12-方法",
+          "13-综合练习",
+          "14-面向对象",
+          "idea快捷键",
+        ],
+      },
+    ],
 
     algolia: {
       apiKey: "b1688585ac173a1da26f53de06745b47",
-      indexName: "java_doc",
+      indexName: "java",
       // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
       appId: "BH4D9OD16A",
     },
   },
-  plugins: [["@vuepress/back-to-top"], ["@vuepress/nprogress"]],
   /* plugins: [
           docsearchPlugin({
             appId: "4GKRFX9WO6",

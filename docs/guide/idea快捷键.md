@@ -11,4 +11,4 @@ title: idea快捷键
 | `Ctrl` + `Alt` + `V`           | 给方法返回值快速生成变量      |
 | `Ctrl` + `W`                   | 选词                          |
 | `Alt` + `Enter`                | 查看idea给的建议              |
-
+| `Alt` + `Insert`               | 快速添加构造方法              |
