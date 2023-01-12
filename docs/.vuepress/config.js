@@ -34,7 +34,7 @@ module.exports = {
       apiKey: "b1688585ac173a1da26f53de06745b47",
       indexName: "java_doc",
       // 如果 Algolia 没有为你提供 `appId` ，使用 `BH4D9OD16A` 或者移除该配置项
-      appId: "BH4D9OD16A",
+      //   appId: "BH4D9OD16A",
     },
   },
   plugins: [["@vuepress/back-to-top"], ["@vuepress/nprogress"]],

@@ -25,7 +25,8 @@ a:hover {
 }
 span .icon.outbound {
   color: #3eaf7c;
+  transition: all 0.3s;
 }
-span .icon.outbound:hover {
+a:hover span .icon.outbound {
   color: white;
 }
