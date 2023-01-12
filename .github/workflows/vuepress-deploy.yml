@@ -13,5 +13,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: jgckm/java
           TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: npm build
+          BUILD_SCRIPT: npm run build
           BUILD_DIR: docs/.vuepress/dist
