@@ -10,10 +10,11 @@ export default ({
   router.afterEach((to) => {
     console.log("after navigation");
     const iframe = document.querySelectorAll("iframe");
-    iframe.forEach((item) => {
-      if (!item.src.includes("&high_quality=1")) {
-        item.src = item.src + "&high_quality=1";
-      } 
-    });
+    for (let i = 0; i < iframe.length; i++) {
+        const item = iframe[i];
+        if (!item.src.includes("&high_quality=1")) {
+          item.src = item.src + "&high_quality=1";
+        } 
+    }
   });
 };
