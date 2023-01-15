@@ -1,11 +1,48 @@
 ---
-home: true
-heroImage: /logo/java.png
-heroText: Java
-actionText: 快速上手 →
-actionLink: /guide/
-footer: MIT Licensed | Copyright © 2022-present JgckM
+title: 学习Java
 ---
-::: slot footer
-MIT Licensed | Copyright © 2022-present [JgckM](https://github.com/jgckM)
+```
+::: tip
+这是一个提示
 :::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+```
+::: tip
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个 details 标签
+:::
+
+# 标题
+
+## 标题
+
+### 标题
+
+#### 标题
+
+##### 标题
+
+> 这是测试文本，没有实际的意义
+
