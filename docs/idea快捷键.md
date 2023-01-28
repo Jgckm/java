@@ -13,6 +13,7 @@ title: idea快捷键
 | `Ctrl` + `W`                   | 选词                          |
 | `Alt` + `Enter`                | 查看idea给的建议              |
 | `Alt` + `Insert`               | 快速添加构造方法              |
+| `Ctrl` + `P`                   | 显示方法参数                  |
 
 ## 插件推荐
 
